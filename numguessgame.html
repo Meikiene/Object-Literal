@@ -1,0 +1,36 @@
+<html>
+  <head>
+    
+  </head>
+  <body>
+    <script>
+//Ask the user for a number between 1 and 5
+//Scold user if the number is not between 1 and 5
+//Ask another player for a number between 1 and 5
+//Compare both numbers.
+//IF the numbers are the same, alert (Tie score);
+//ELSE IF the numbers are not the same (tell each player what they guessed);
+function gameOver() {
+  window.alert("LOOOOOOOOOOOOOOOOOOOOOOOOOOOOSER");
+}
+
+function game() {
+  var playerOne = prompt("p1. Enter num between 1 and 5");
+  var playerTwo = prompt("p2. Enter num between 1 and 5");
+  if ((playerOne < 1 || playerOne > 5) || (playerTwo < 1 || playerTwo > 5)){
+    window.alert("You are a dirty cheater");
+    gameOver();
+    return;
+  }
+  if (playerOne === playerTwo) {
+    window.alert("Tie Score");
+  }
+  else {
+    window.alert("p1 chose " + playerOne);
+    window.alert("p2 chose " + playerTwo);
+  }
+}
+</script>
+<button onclick="game()">Click Me</button>
+</body>
+</html>
